@@ -1,0 +1,49 @@
+# C# Desktop Genius .gitignore for .NET MAUI Projects
+
+## General ===================================================================
+# Archivos de configuración de usuario y temporales de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpeta de configuraciones de Visual Studio
+.vs/
+
+# Resultados de compilación (Build artifacts)
+[Bb]in/
+[Oo]bj/
+
+# Archivos generados por Rider
+.idea/
+
+## .NET MAUI Específico =====================================================
+# Ignorar carpetas de compilación dentro de las plataformas específicas
+Platforms/Android/bin/
+Platforms/Android/obj/
+Platforms/iOS/bin/
+Platforms/iOS/obj/
+Platforms/MacCatalyst/bin/
+Platforms/MacCatalyst/obj/
+Platforms/Tizen/bin/
+Platforms/Tizen/obj/
+Platforms/Windows/bin/
+Platforms/Windows/obj/
+
+# Recursos generados
+Resources/Raw/AboutAssets.txt
+
+## Archivos de Publicación ====================================================
+[Pp]ublish/
+*.publish.xml
+*.pubxml
+
+## Seguridad - ¡Importante! =================================================
+# No subir configuraciones de desarrollo que puedan contener secretos o
+# cadenas de conexión locales.
+appsettings.Development.json
+
+## Otros =====================================================================
+# Archivos de caché y logs
+*.log
+*.DS_Store
